@@ -11,6 +11,8 @@ body {
     color: #1d1d1d;
     font-family: "HK Grotesk", sans-serif;
     font-weight: normal;
+    text-align: justify;
+    text-align-last: left;
 }
 
 img {
@@ -176,6 +178,16 @@ header::before {
    Everything else
 ================== */
 
+a {
+    color: $accent;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: $grey;
+}
+
 section {
     margin-bottom: 5em;
 }
@@ -203,6 +215,28 @@ section {
     filter: grayscale(0%);
 }
 
+ul {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+li:before {
+    content: "‣";
+    position: absolute;
+    left: 0px;
+    color: $accent;
+    margin-right: 0em;
+}
+
 // Styling for the "My Experience" tab group
 /* Style the tab */
 .tab {
@@ -210,6 +244,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-radius: 5px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -228,19 +263,41 @@ section {
     transition: all 0.2s ease-in-out;
 }
 
+/* Create an active/current tablink class */
+.tab button.active {
+    color: $accent;
+}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
     color: $white;
     background-color: #a4243c
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    color: $accent;
-}
-
 /* Style the tab content */
 .tab-content {
     display: none;
     padding: 14px 0;
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tab-content-title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.tab-content-date {
+    font-family: "Inconsolata", monospace;
+    font-weight: bold;
+    color: $grey
 }

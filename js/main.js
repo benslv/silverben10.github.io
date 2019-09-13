@@ -18,3 +18,5 @@ function openContent(evt, expName) {
 	document.getElementById(expName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultActive").click();
