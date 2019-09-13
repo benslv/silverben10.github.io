@@ -243,4 +243,53 @@ section {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
 }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font-family: inherit;
+  font-size: inherit;
+  color: #aaaaaa;
+  text-align: left;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #a4243b;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #a4243b;
+}
+
+/* Style the tab content */
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 /*# sourceMappingURL=main.css.map */
