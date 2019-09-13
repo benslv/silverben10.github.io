@@ -5,6 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css" />
 	<title>Computer Science Student</title>
 </head>
@@ -52,8 +53,8 @@
 							in the University Jazz and Concert bands.
 						</p>
 						<p>My skills include:</p>
-						<ul>
-							<li>Javascript</li>
+						<ul class="custom-bullet">
+							<li>JavaScript</li>
 							<li>React</li>
 							<li>Python</li>
 							<li>HTML & S(CSS)</li>
@@ -89,7 +90,7 @@
 									href="https://cybersoc.co.uk/" target="_blank">@
 									CyberSoc</a></p>
 							<p class="tab-content-date">Mar 2019 - present</p>
-							<ul class="tab-content-roles">
+							<ul class="tab-content-roles custom-bullet">
 								<li>Assist CyberSoc President in liasing with external stakeholders.</li>
 								<li>Write and disseminate communications to CyberSoc members and the wider student
 									body.</li>
@@ -100,7 +101,7 @@
 									target="_blank">@
 									Rewind Gaming</a></p>
 							<p class="tab-content-date">Jun 2016 - present</p>
-							<ul class="tab-content-roles">
+							<ul class="tab-content-roles custom-bullet">
 								<li>Negotiate partnerships and sponsorship with other companies.</li>
 								<li>Devise and run Rewind Gaming's social media campaigns.</li>
 								<li>Manage a team of 30+ volunteer staff</li>
@@ -124,7 +125,7 @@
 									MintTwist</a>
 							</p>
 							<p class="tab-content-date">Aug 2016 - Sept 2016</p>
-							<ul class="tab-content-roles">
+							<ul class="tab-content-roles custom-bullet">
 								<li>Developed website landing pages for clients.</li>
 								<li>Managed Git repositories for site data.</li>
 								<li>Error-checked and resolved bugs in pre-existing code.</li>
@@ -140,8 +141,54 @@
 		<section id="projects">
 			<div class="container">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-4">
 						<h2><span class="section-number">03.</span> Stuff I've Made</h2>
+						<div class="card-deck">
+							<div class="card">
+								<div class="card-title">Boostnote to Markdown Exporter</div>
+								<div class="card-body">
+									<p>After using Boostnote throughout my first year at univeristy, I found I wanted a
+										way to export and convert them all to Markdown, with apparently no easy way to
+										do so.
+									</p>
+									<p>I wrote a Python script to parse the information in Boostnote’s <span
+											class="text-code">.cson</span> files and output all the notes into a
+										sensible folder structure for use in other programs.</p>
+									<div class="card-links">
+										<i class="fab fa-github"></i>
+									</div>
+								</div>
+								<div class="card-tags">
+									<ul>
+										<li>Python</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-title">Wiki Card Viewer</div>
+								<div class="card-body">
+									<p>I built a webapp using ReactJS that allows users to search for a term on
+										Wikipedia and have the results returned to them as a set of cards.</p>
+									<p>
+										My focus for this project was to combine what I’d learned about React, Bootstrap
+										and APIs. I also took the opportunity to improve my web design skills and create
+										something aesthetically pleasing.
+									</p>
+									<div class="card-links">
+										<i class="fab fa-github"></i>
+										<i class="fas fa-external-link-alt"></i>
+									</div>
+								</div>
+								<div class="card-tags">
+									<ul>
+										<li>React</li>
+										<li>JavaScript</li>
+										<li>HTML</li>
+										<li>CSS</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

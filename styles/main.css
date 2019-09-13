@@ -60,6 +60,7 @@ p {
 h1,
 h2,
 h3 {
+  letter-spacing: 0.5px;
   font-weight: bold;
 }
 
@@ -272,7 +273,7 @@ li {
   margin-bottom: 0.5em;
 }
 
-li:before {
+.custom-bullet li:before {
   content: "‣";
   position: absolute;
   left: 0px;
@@ -357,5 +358,83 @@ li:before {
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   color: #aaaaaa;
+}
+
+.card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #aaaaaa;
+  border-radius: 10px;
+  width: 350px;
+  margin-right: 2em;
+}
+
+.card-title {
+  font-weight: bold;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.card-body {
+  padding: 1em;
+}
+
+.card-tags {
+  padding: 1em 1.5em;
+  border-top: 2px solid #aaaaaa;
+}
+
+.card-tags ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.card-tags li {
+  font-family: "Inconsolata", monospace;
+  color: #a4243b;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+}
+
+.card-tags li:before {
+  content: "";
+}
+
+.card-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-links i {
+  font-size: 1.125rem;
+  color: #aaaaaa;
+  margin-left: 0.75em;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.card-links i:hover {
+  color: #a4243b;
 }
 /*# sourceMappingURL=main.css.map */

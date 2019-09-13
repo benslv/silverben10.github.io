@@ -32,6 +32,7 @@ p {
 h1,
 h2,
 h3 {
+    letter-spacing: 0.5px;
     font-weight: bold;
 }
 
@@ -229,7 +230,7 @@ li {
     margin-bottom: 0.5em;
 }
 
-li:before {
+.custom-bullet li:before {
     content: "‣";
     position: absolute;
     left: 0px;
@@ -299,4 +300,67 @@ li:before {
     font-family: "Inconsolata", monospace;
     font-weight: bold;
     color: $grey
+}
+
+.card-deck {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $grey;
+    border-radius: 10px;
+    width: 350px;
+    margin-right: 2em;
+}
+
+.card-title {
+    font-weight: bold;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-tags {
+    padding: 1em 1.5em;
+    border-top: 2px solid $grey;
+}
+
+.card-tags ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.card-tags li {
+    font-family: "Inconsolata", monospace;
+    color: $accent;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+
+}
+
+.card-tags li:before {
+    content: "";
+}
+
+.card-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-links i {
+    font-size: 1.125rem;
+    color: $grey;
+    margin-left: 0.75em;
+    transition: color 0.2s ease-in-out;
+}
+
+.card-links i:hover {
+    color: $accent;
 }
