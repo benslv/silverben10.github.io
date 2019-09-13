@@ -271,13 +271,14 @@ section {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #a4243b;
+  color: #fff;
+  background-color: #a4243c;
 }
 
 /* Create an active/current tablink class */
@@ -288,8 +289,6 @@ section {
 /* Style the tab content */
 .tab-content {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  padding: 14px 0;
 }
 /*# sourceMappingURL=main.css.map */
