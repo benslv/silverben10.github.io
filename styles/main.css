@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.eot") format("embedded-opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("Inconsolata-Bold.eot");
+  src: url("Inconsolata-Bold.eot?#iefix") format("embedded-opentype"), url("Inconsolata-Bold.woff2") format("woff2"), url("Inconsolata-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("Inconsolata-Regular.eot");
+  src: url("Inconsolata-Regular.eot?#iefix") format("embedded-opentype"), url("Inconsolata-Regular.woff2") format("woff2"), url("Inconsolata-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  color: #1d1d1d;
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+}
+
+/* =============
+   Typography 
+============= */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.25em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.hero-tag {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: #a4243b;
+  margin: 0;
+}
+
+/* ========
+  Layout
+======== */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+/* =========
+   Navbar
+========= */
+.top-line {
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  width: 0%;
+  background-color: #a4243b;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  margin: 3em 0;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-item {
+  margin-left: 1.5em;
+}
+
+.nav-link {
+  color: #1d1d1d;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.nav-link-email {
+  color: #aaaaaa;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #a4243b;
+}
+
+/* ==========
+   Buttons
+========== */
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-accent {
+  border: 2px solid #a4243b;
+  color: #a4243b;
+}
+
+.btn-accent:hover {
+  background-color: #a4243b;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

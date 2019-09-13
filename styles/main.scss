@@ -1,0 +1,160 @@
+@import "./variables";
+@import "./fonts";
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0;
+    color: #1d1d1d;
+    font-family: "HK Grotesk", sans-serif;
+    font-weight: normal;
+}
+
+img {
+    display: block;
+}
+
+/* =============
+   Typography 
+============= */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.25em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.hero-tag {
+    font-family: "Inconsolata", monospace;
+    font-weight: bold;
+    color: $accent;
+    margin: 0;
+}
+
+/* ========
+  Layout
+======== */
+
+// Basic responsive stuff
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    width: 20%
+}
+
+.col-2 {
+    width: 45%
+}
+
+.col-3 {
+    width: 70%
+}
+
+.col-4 {
+    width: 100%
+}
+
+// Position of hero section
+.hero {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+/* =========
+   Navbar
+========= */
+.top-line {
+    transition: width 0.5s ease-in-out;
+    width: 0%;
+    background-color: $accent;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    margin: 3em 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-left: 1.5em;
+}
+
+.nav-link {
+    color: $dark;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.nav-link-email {
+    color: $grey;
+}
+
+
+.nav-link:hover,
+.nav-link:focus {
+    color: $accent;
+}
+
+/* ==========
+   Buttons
+========== */
+.btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+
+    font-family: "Inconsolata", monospace;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-accent {
+    border: 2px solid $accent;
+    color: $accent;
+}
+
+.btn-accent:hover {
+    background-color: $accent;
+    color: white;
+}

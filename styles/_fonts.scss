@@ -1,0 +1,39 @@
+// HK Grotesk
+@font-face {
+	font-family: "HK Grotesk";
+	src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2"),
+		url("../fonts/HKGrotesk-Bold.woff") format("woff"),
+		url("../fonts/HKGrotesk-Bold.eot") format("embedded-opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "HK Grotesk";
+	src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"),
+		url("../fonts/HKGrotesk-Regular.woff") format("woff"),
+		url("../fonts/HKGrotesk-Regular.eot") format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Inconsolata
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('Inconsolata-Bold.eot');
+	src: url('Inconsolata-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Inconsolata-Bold.woff2') format('woff2'),
+		url('Inconsolata-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('Inconsolata-Regular.eot');
+	src: url('Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Inconsolata-Regular.woff2') format('woff2'),
+		url('Inconsolata-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
