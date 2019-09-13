@@ -110,14 +110,19 @@ p {
   width: 100%;
 }
 
-.hero {
+section {
+  margin-bottom: 5em;
+}
+
+#hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 600px;
+  height: 1080px;
+  height: calc(100vh - 145px);
 }
 
 /* =========
@@ -135,7 +140,7 @@ p {
 }
 
 .navbar {
-  margin: 3em 0;
+  padding: 3em 0;
 }
 
 .nav-list {
@@ -169,6 +174,21 @@ p {
 .nav-link:hover,
 .nav-link:focus {
   color: #a4243b;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/nicole-honeywill-i3PdRmNFx_c-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+  z-index: -1;
 }
 
 /* ==========
