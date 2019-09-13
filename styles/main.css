@@ -61,8 +61,13 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
   margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
 }
 
 p {
@@ -77,7 +82,7 @@ p {
 }
 
 /* ========
-  Layout
+  Basic Layout Grid
 ======== */
 .container {
   width: 90%;
@@ -108,21 +113,6 @@ p {
 
 .col-4 {
   width: 100%;
-}
-
-section {
-  margin-bottom: 5em;
-}
-
-#hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 1080px;
-  height: calc(100vh - 145px);
 }
 
 /* =========
@@ -213,5 +203,44 @@ header::before {
 .btn-accent:hover {
   background-color: #a4243b;
   color: white;
+}
+
+/* ==================
+   Everything else
+================== */
+section {
+  margin-bottom: 5em;
+}
+
+.section-number {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: #a4243b;
+}
+
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1080px;
+  height: calc(100vh - 145px);
+}
+
+.profile-img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  border-radius: 5px;
+  -webkit-transition: -webkit-filter 0.2s ease-in-out;
+  transition: -webkit-filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+}
+
+.profile-img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 /*# sourceMappingURL=main.css.map */
