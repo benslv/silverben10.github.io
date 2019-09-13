@@ -84,9 +84,9 @@ p {
   margin: 0;
 }
 
-/* ========
+/* ===================
   Basic Layout Grid
-======== */
+=================== */
 .container {
   width: 90%;
   max-width: 960px;
@@ -293,7 +293,6 @@ li:before {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-radius: 5px;
 }
 
 /* Style the buttons that are used to open the tab content */

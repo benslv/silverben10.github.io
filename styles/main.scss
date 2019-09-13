@@ -56,9 +56,9 @@ p {
     margin: 0;
 }
 
-/* ========
+/* ===================
   Basic Layout Grid
-======== */
+=================== */
 
 // Basic responsive stuff
 .container {
@@ -244,7 +244,6 @@ li:before {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-radius: 5px;
 }
 
 /* Style the buttons that are used to open the tab content */
