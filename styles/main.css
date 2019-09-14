@@ -443,4 +443,43 @@ li {
   height: 100px;
   margin: 0 1em;
 }
+
+/* ================
+   Rewind Gaming
+================ */
+#rewind-gaming {
+  color: #fff;
+  background-image: url("../img/rg-background.png");
+  padding: 3em;
+}
+
+#rewind-gaming .section-number {
+  color: #2196f3;
+}
+
+#rewind-gaming a {
+  color: #2196f3;
+}
+
+#rewind-gaming a:hover,
+#rewind-gaming a:active {
+  color: #fff;
+}
+
+.blockquote {
+  background-color: #161e26;
+  padding: 1.5em;
+  margin: 2em 0;
+  border-radius: 5px;
+}
+
+.quote-author {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  margin: 0;
+}
+
+.quote-author:before {
+  content: "-";
+}
 /*# sourceMappingURL=main.css.map */
