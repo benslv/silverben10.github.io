@@ -45,6 +45,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* =============
@@ -450,7 +451,7 @@ li {
 #rewind-gaming {
   color: #fff;
   background-image: url("../img/rg-background.png");
-  padding: 3em;
+  padding: 5em;
 }
 
 #rewind-gaming .section-number {
@@ -466,10 +467,31 @@ li {
   color: #fff;
 }
 
+#rewind-gaming img {
+  margin: 1em 0;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.28, 0.74, 0.16, 1.06);
+  transition: -webkit-transform 0.2s cubic-bezier(0.28, 0.74, 0.16, 1.06);
+  transition: transform 0.2s cubic-bezier(0.28, 0.74, 0.16, 1.06);
+  transition: transform 0.2s cubic-bezier(0.28, 0.74, 0.16, 1.06), -webkit-transform 0.2s cubic-bezier(0.28, 0.74, 0.16, 1.06);
+  -webkit-box-shadow: 0px 0px 100px -60px white;
+          box-shadow: 0px 0px 100px -60px white;
+}
+
+#rewind-gaming img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#rewind-gaming .blockquote {
+  -webkit-box-shadow: 0px 0px 100px -60px white;
+          box-shadow: 0px 0px 100px -60px white;
+}
+
 .blockquote {
   background-color: #161e26;
+  display: block;
   padding: 1.5em;
-  margin: 2em 0;
+  margin: 2em 15px;
   border-radius: 5px;
 }
 
