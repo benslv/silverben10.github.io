@@ -17,6 +17,7 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 /* =============
@@ -381,7 +382,7 @@ li {
 #rewind-gaming {
     color: $white;
     background-image: url("../img/rg-background.png");
-    padding: 3em;
+    padding: 5em;
 
     .section-number {
         color: $rg-accent;
@@ -395,12 +396,27 @@ li {
     a:active {
         color: $white;
     }
+
+    img {
+        margin: 1em 0;
+        transition: transform 0.2s cubic-bezier(.28, .74, .16, 1.06);
+        box-shadow: 0px 0px 100px -60px rgba(255, 255, 255, 1);
+    }
+
+    img:hover {
+        transform: translateY(-10px);
+    }
+
+    .blockquote {
+        box-shadow: 0px 0px 100px -60px rgba(255, 255, 255, 1);
+    }
 }
 
 .blockquote {
     background-color: $rg-darkblue;
+    display: block;
     padding: 1.5em;
-    margin: 2em 0;
+    margin: 2em 15px;
     border-radius: 5px;
 }
 
