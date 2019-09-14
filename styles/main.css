@@ -75,6 +75,11 @@ h2 {
   margin-bottom: 0.75em;
 }
 
+h3 {
+  font-family: "Inconsolata", monospace;
+  color: #aaaaaa;
+}
+
 p {
   margin-bottom: 1em;
 }
@@ -277,6 +282,11 @@ ul {
 
 ul {
   padding-left: 0px;
+}
+
+.two-column {
+  -webkit-columns: 2;
+          columns: 2;
 }
 
 li {
@@ -510,5 +520,45 @@ li {
 
 .quote-author:before {
   content: "-";
+}
+
+footer {
+  color: white;
+  background-color: #1d1d1d;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+footer li {
+  padding-left: 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover,
+footer a:active {
+  color: #a4243b;
+}
+
+.footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+
+.footer-text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

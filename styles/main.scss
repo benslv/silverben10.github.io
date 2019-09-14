@@ -47,6 +47,11 @@ h2 {
     margin-bottom: 0.75em;
 }
 
+h3 {
+    font-family: "Inconsolata", monospace;
+    color: $grey;
+}
+
 p {
     margin-bottom: 1em;
 }
@@ -232,6 +237,10 @@ ul {
 
 ul {
     padding-left: 0px;
+}
+
+.two-column {
+    columns: 2;
 }
 
 li {
@@ -433,4 +442,38 @@ li {
 
 .quote-author:before {
     content: "-"
+}
+
+footer {
+    color: white;
+    background-color: $dark;
+    padding-top: 3em;
+    padding-bottom: 2em;
+
+    li {
+        padding-left: 0;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover,
+    a:active {
+        color: $accent;
+    }
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    font-family: "Inconsolata",
+    monospace;
+    font-weight: bold;
 }
