@@ -191,6 +191,8 @@ header::before {
   background-size: cover;
   opacity: 0.05;
   z-index: -1;
+  -webkit-box-shadow: inset 0px -200px 101px -122px white;
+          box-shadow: inset 0px -200px 101px -122px white;
 }
 
 /* ==========
@@ -451,7 +453,12 @@ li {
 #rewind-gaming {
   color: #fff;
   background-image: url("../img/rg-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5em;
+  -webkit-box-shadow: inset 0px 0px 100px -35px black;
+          box-shadow: inset 0px 0px 100px -35px black;
 }
 
 #rewind-gaming .section-number {

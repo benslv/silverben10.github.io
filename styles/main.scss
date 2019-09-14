@@ -155,6 +155,7 @@ header::before {
     background-size: cover;
     opacity: 0.05;
     z-index: -1;
+    box-shadow: inset 0px -200px 101px -122px rgba(255, 255, 255, 1);
 }
 
 /* ==========
@@ -382,7 +383,11 @@ li {
 #rewind-gaming {
     color: $white;
     background-image: url("../img/rg-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 5em;
+    box-shadow: inset 0px 0px 100px -35px rgba(0, 0, 0, 1);
 
     .section-number {
         color: $rg-accent;
