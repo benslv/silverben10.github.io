@@ -437,4 +437,10 @@ li {
 .card-links i:hover {
   color: #a4243b;
 }
+
+.vr {
+  border-left: 1px solid #aaaaaa;
+  height: 100px;
+  margin: 0 1em;
+}
 /*# sourceMappingURL=main.css.map */

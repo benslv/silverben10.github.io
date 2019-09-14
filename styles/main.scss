@@ -367,3 +367,10 @@ li {
 .card-links i:hover {
 	color: $accent;
 }
+
+// Vertical Line Divider
+.vr {
+	border-left: 1px solid $grey;
+	height: 100px;
+	margin: 0 1em;
+}
