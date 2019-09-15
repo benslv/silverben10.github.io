@@ -79,6 +79,8 @@ p {
     justify-content: space-between;
 }
 
+// TODO: Implement wrapping for columns. Need to watch more of the Scrimba tutorial to learn.
+
 // Target all classes elements with some form of "col-" class and apply 15px left/right margin.
 .row>[class*=col] {
     padding-left: 15px;
@@ -497,7 +499,7 @@ li {
 .blockquote {
     background-color: $rg-darkblue;
     display: block;
-    padding: 1.5em !important;
+    padding: 1.5em;
     margin: 2em 15px;
     border-radius: 5px;
 }

@@ -569,7 +569,7 @@ li {
 .blockquote {
   background-color: #161e26;
   display: block;
-  padding: 1.5em !important;
+  padding: 1.5em;
   margin: 2em 15px;
   border-radius: 5px;
 }
