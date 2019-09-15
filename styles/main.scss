@@ -450,8 +450,14 @@ footer {
     padding-top: 3em;
     padding-bottom: 2em;
 
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
     li {
         padding-left: 0;
+        margin: 0 1em;
     }
 
     a {
@@ -465,15 +471,10 @@ footer {
 }
 
 .footer-text {
+
     display: flex;
     justify-content: center;
 
-    div {
-        display: flex;
-        justify-content: center;
-    }
-
-    font-family: "Inconsolata",
-    monospace;
+    font-family: "Inconsolata", monospace;
     font-weight: bold;
 }
