@@ -16,21 +16,25 @@
 		<div class="container">
 			<nav class="navbar">
 				<ul class="nav-list">
+					<!-- TODO: Make these scroll to relevant positions -->
 					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-					<li class="nav-item"><a class="nav-link nav-link-email" href="#">hello@bensilverman.co.uk</a></li>
+					<li class="nav-item"><a class="nav-link nav-link-email" href="mailto:hello@bensilverman.co@@uk"
+							onfocus="this.href=this.href.replace('@@', '.')"
+							target="_blank">hello@bensilverman.co.uk</a></li>
 				</ul>
 			</nav>
 		</div>
 		<section id="hero">
 			<div class="container">
 				<div class="row">
-					<div class="col-2">
+					<div class="col-4 col-sm-3 col-md-2">
 						<p class="hero-tag">Hello, my name is</p>
 						<h1>Ben Silverman.</h1>
 						<p>I’m a second-year Computer Science student currently at the University of York
 							with a keen interest in web design and development.</p>
-						<a class="btn btn-accent" href="#">Download CV</a>
+						<a class="btn btn-accent" href="CV September 2019 (2019-09-11).pdf" target="_blank">Download
+							CV</a>
 					</div>
 				</div>
 			</div>
@@ -41,12 +45,11 @@
 	<section id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-4 col-sm-2">
 					<h2><span class="section-number">01.</span> About Me</h2>
-					<p>Hi! I'm Ben, a second year Computer Science student
-						at the University of York. I decided I needed website
-						as a central location to showcase the things I do, so
-						here it is.</p>
+					<p>Hi! I'm Ben, a second year Computer Science student at the University of York. I built this
+						website to showcase the work I've been doing recently and demonstrate my skills in web
+						development.</p>
 					<p>
 						Outside of my studies, I usually spend my time
 						programming, working at <a href="https://rewindrl.uk" target="_blank">Rewind Gaming</a>, or
@@ -63,7 +66,7 @@
 						<li>Photoshop</li>
 					</ul>
 				</div>
-				<div class="col-2">
+				<div class="col-4 col-sm-2">
 					<img src="img/profile.jpg" alt="A profile picture of me. Head and shoulders." class="profile-img" />
 				</div>
 			</div>
@@ -147,7 +150,7 @@
 			<div class="row">
 				<div class="col-4">
 					<h2><span class="section-number">03.</span> Stuff I've Made</h2>
-					<div class="card-deck" style="align-items: center">
+					<div class="card-deck">
 						<div class="card">
 							<div class="card-body">
 								<div class="card-title">Boostnote to Markdown Exporter</div>
@@ -166,6 +169,7 @@
 							</div>
 						</div>
 						<div class="vr"></div>
+						<div class="hr"></div>
 						<div class="card">
 							<div class="card-body">
 								<div class="card-title">Wiki Card Viewer</div>
@@ -190,6 +194,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-4">
+					<p style="font-weight: bold">This website!</p>
+					<p>I built this site completely from scratch. No Bootstrap. No
+						templates. I'm always looking to learn new things, and building my own portfolio site from the
+						ground up seemed like the perfect opportunity to test my knowledge of responsive design and
+						improve my web development skills in general. </p>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -197,7 +210,7 @@
 	<section id="rewind-gaming">
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-4 col-md-3">
 					<h2><span class="section-number">04.</span> Rewind Gaming</h2>
 					<p>In 2016 I founded <a href="https://rewindrl.uk" target="_blank">Rewind Gaming</a>, a European
 						esports organisation, with one of my
@@ -225,10 +238,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"><a href="https://smash.gg/the-colosseum" target="_blank"><img
+				<div class="col-4 col-sm-2"><a href="https://smash.gg/the-colosseum" target="_blank"><img
 							src="img/colo-thumb.png" alt="Thumbnail for The Colosseum tournament." /></a></div>
-				<div class="col-2"><a href="https://smash.gg/neondream" target="_blank"><img src="img/neon-thumb.png"
-							alt="Thumbnail for the Neon Dream tournament." /></a></div>
+				<div class="col-4 col-sm-2"><a href="https://smash.gg/neondream" target="_blank"><img
+							src="img/neon-thumb.png" alt="Thumbnail for the Neon Dream tournament." /></a></div>
 			</div>
 		</div>
 	</section>
@@ -237,14 +250,15 @@
 	<section id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-4 col-md-2">
 					<h2><span class="section-number">05.</span> Contact Me</h2>
 					<p>I’m currently a full-time student but am always on the
 						lookout for new opportunities. If you would like to work
 						with me, drop me a line and I’ll get back to you as soon
 						as possible! You can also contact me on social media,
 						too, if you’d prefer.</p>
-					<a class="btn btn-accent">Get in touch</a>
+					<a class="btn btn-accent" href="mailto:hello@bensilverman.co@@uk"
+						onfocus="this.href=this.href.replace('@@', '.')" target="_blank">Get in touch</a>
 				</div>
 			</div>
 		</div>
@@ -254,18 +268,33 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-1">
-				<h3>Socials</h3>
-				<ul class="two-column">
-					<li><a href="https://linkedin.com/in/ben-silverman" target="_blank">LinkedIn</a></li>
-					<li><a href="https://twitter.com/bensilverman_" target="_blank">Twitter</a></li>
-					<li><a href="https://instagram.com/ben.silverman" target="_blank">Instagram</a></li>
-					<li><a href="https://behance.com/poisonwasp" target="_blank">Behance</a></li>
+			<div class="col-4">
+				<ul>
+					<li>
+						<a href="https://linkedin.com/in/ben-silverman" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/bensilverman_" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/ben.silverman" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://behance.com/poisonwasp" target="_blank">
+							<i class="fab fa-behance"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="row footer-text">
-			<div class="col-2">
+		<div class="row">
+			<div class="col-4 footer-text">
 				<p>Designed & built by Ben Silverman</p>
 			</div>
 		</div>

@@ -79,11 +79,12 @@ p {
     justify-content: space-between;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4 {
-    padding: 0 15px;
+// TODO: Implement wrapping for columns. Need to watch more of the Scrimba tutorial to learn.
+
+// Target all classes elements with some form of "col-" class and apply 15px left/right margin.
+.row>[class*=col] {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .col-1 {
@@ -100,6 +101,46 @@ p {
 
 .col-4 {
     width: 100%;
+}
+
+@media (min-width: $sm-width) {
+    .col-sm-1 {
+        width: 25%
+    }
+
+    .col-sm-2 {
+        width: 50%
+    }
+
+    .col-sm-3 {
+        width: 75%
+    }
+
+    .col-sm-4 {
+        width: 100%
+    }
+}
+
+@media (min-width: $md-width) {
+    .col-md-1 {
+        width: 25%
+    }
+
+    .col-md-2 {
+        width: 50%
+    }
+
+    .col-md-3 {
+        width: 75%
+    }
+
+    .col-md-4 {
+        width: 100%
+    }
+}
+
+section {
+    margin-bottom: 5em;
 }
 
 /* =========
@@ -204,10 +245,6 @@ a:hover {
     color: $grey;
 }
 
-section {
-    margin-bottom: 5em;
-}
-
 .section-number {
     font-family: "Inconsolata", monospace;
     font-weight: bold;
@@ -255,6 +292,20 @@ li {
     left: 0px;
     color: $accent;
     margin-right: 0em;
+}
+
+// Vertical Line Divider
+.vr {
+    border-left: 1px solid $grey;
+    height: 100px;
+    margin: 0 1em;
+}
+
+// Horizontal Line Divider
+.hr {
+    border-top: 1px solid $grey;
+    width: 100px;
+    margin: 1em 0;
 }
 
 // Styling for the "My Experience" tab group
@@ -329,6 +380,32 @@ li {
 
 .card-deck {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Hide vertical divider
+    .vr {
+        display: none;
+    }
+
+    .hr {
+        display: block;
+    }
+}
+
+// Stack cards one above the other
+@media (min-width: $md-width) {
+    .card-deck {
+        flex-direction: row;
+
+        .vr {
+            display: block;
+        }
+
+        .hr {
+            display: none;
+        }
+    }
 }
 
 .card-title {
@@ -379,13 +456,6 @@ li {
     }
 }
 
-// Vertical Line Divider
-.vr {
-    border-left: 1px solid $grey;
-    height: 100px;
-    margin: 0 1em;
-}
-
 /* ================
    Rewind Gaming
 ================ */
@@ -395,7 +465,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5em;
+    padding: 5em 0;
     box-shadow: inset 0px 0px 100px -35px rgba(0, 0, 0, 1);
 
     .section-number {
@@ -450,8 +520,14 @@ footer {
     padding-top: 3em;
     padding-bottom: 2em;
 
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
     li {
         padding-left: 0;
+        margin: 0 1em;
     }
 
     a {
@@ -468,12 +544,6 @@ footer {
     display: flex;
     justify-content: center;
 
-    div {
-        display: flex;
-        justify-content: center;
-    }
-
-    font-family: "Inconsolata",
-    monospace;
+    font-family: "Inconsolata", monospace;
     font-weight: bold;
 }
