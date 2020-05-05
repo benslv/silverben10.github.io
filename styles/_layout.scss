@@ -1,0 +1,77 @@
+/* ========================================================
+   Styles for creating a 4-column responsive grid layout
+   TODO: Implement using flex instead of width
+   TODO: Fix wrapping problems when moving to small
+         screens.
+   ===================================================== */
+
+@import "./variables";
+
+.container {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Target all classes elements with some form of "col-" class and apply 15px left/right margin.
+.row>[class*="col"] {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.col-1 {
+	width: 25%;
+}
+
+.col-2 {
+	width: 50%;
+}
+
+.col-3 {
+	width: 75%;
+}
+
+.col-4 {
+	width: 100%;
+}
+
+@media (min-width: $sm-width) {
+	.col-sm-1 {
+		width: 25%;
+	}
+
+	.col-sm-2 {
+		width: 50%;
+	}
+
+	.col-sm-3 {
+		width: 75%;
+	}
+
+	.col-sm-4 {
+		width: 100%;
+	}
+}
+
+@media (min-width: $md-width) {
+	.col-md-1 {
+		width: 25%;
+	}
+
+	.col-md-2 {
+		width: 50%;
+	}
+
+	.col-md-3 {
+		width: 75%;
+	}
+
+	.col-md-4 {
+		width: 100%;
+	}
+}

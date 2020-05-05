@@ -27,71 +27,12 @@
   font-style: normal;
 }
 
-html {
-  font-size: 18px;
-}
-
-body {
-  background-color: #fafafa;
-  margin: 0;
-  color: #1d1d1d;
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: normal;
-  text-align: justify;
-  text-align-last: left;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* =============
-   Typography 
-============= */
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-h1,
-h2,
-h3 {
-  letter-spacing: 0.5px;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 3.6rem;
-  margin-bottom: 0.25em;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75em;
-}
-
-h3 {
-  font-family: "Inconsolata", monospace;
-  color: #aaaaaa;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-.hero-tag {
-  font-family: "Inconsolata", monospace;
-  font-weight: bold;
-  color: #a4243b;
-  margin: 0;
-}
-
-/* ===================
-  Basic Layout Grid
-=================== */
+/* ========================================================
+   Styles for creating a 4-column responsive grid layout
+   TODO: Implement using flex instead of width
+   TODO: Fix wrapping problems when moving to small
+         screens.
+   ===================================================== */
 .container {
   width: 90%;
   max-width: 960px;
@@ -107,7 +48,7 @@ p {
           justify-content: space-between;
 }
 
-.row > [class*=col] {
+.row > [class*="col"] {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -158,6 +99,73 @@ p {
   }
 }
 
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  color: #1d1d1d;
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =============
+   Typography 
+============= */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 0.25em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-family: "Inconsolata", monospace;
+  color: #aaaaaa;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.hero-tag {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: #a4243b;
+  margin: 0;
+}
+
+/* ===================
+  Basic Layout Grid
+=================== */
 section {
   margin-bottom: 5em;
 }
@@ -569,7 +577,7 @@ li {
 .blockquote {
   background-color: #161e26;
   display: block;
-  padding: 1.5em;
+  padding: 1.5em !important;
   margin: 2em 15px;
   border-radius: 5px;
 }
