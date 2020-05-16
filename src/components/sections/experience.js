@@ -47,14 +47,15 @@ const Experience = () => {
                             <StyledJobTitle>
                                 <span>{role}</span>
                                 <StyledCompanyLink>
-                                    {" "}
+                                    {" @"}
                                     <a href={link} target="_blank" rel="noopener noreferrer">
-                                        {`@ ${name}`}
+                                        {name}
                                     </a>
                                 </StyledCompanyLink>
                             </StyledJobTitle>
                             <StyledJobDates>{`${startDate} - ${endDate}`}</StyledJobDates>
                             <StyledRespList>
+                                {/* We have to go deeper! */}
                                 {responsibilities.map((entry) => {
                                     return <li>{entry}</li>;
                                 })}
