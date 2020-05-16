@@ -11,6 +11,7 @@ const Layout = ({ title, children }) => (
             <title>{title}</title>
         </Helmet>
         <div className="container">{children}</div>
+        <Footer />
     </div>
 );
 
