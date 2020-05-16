@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./skills.scss";
+
 const Skills = () => (
     <div>
         <h2>Skills</h2>

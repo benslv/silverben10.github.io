@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+ul {
+    list-style-type: none;
+    line-height: 150%;
+    padding-left: 0;
+
+    margin-top: 0;
+
+    &:before {
+        content: attr(aria-label);
+        font-weight: bold;
+    }
+
+    li:before {
+        content: "‣ ";
+        font-size: 18px;
+        color: $randomAccent;
+    }
+}
