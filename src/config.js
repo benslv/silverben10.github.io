@@ -49,4 +49,23 @@ const jobs = [
     },
 ];
 
-export default jobs;
+const projects = [
+    {
+        name: "CyberSoc",
+        description:
+            "Website for CyberSoc, the University of York’s Cyber Security society. Designed and built from scratch, using GatsbyJS to leverage static site hosting with dynamic content.",
+        techs: ["React", "Express", "Gatsby", "HTML", "Sass"],
+        repo: "https://github.com/CyberSocYork/cybersocyork.github.io ",
+        link: "https://cybersoc.co.uk",
+    },
+    {
+        name: "WikiCard Viewer",
+        description:
+            "A web app using ReactJS that allows users to search for a term on Wikipedia and have the results returned to them as a set of aesthetic cards.",
+        techs: ["React", "JavaScript", "HTML", "CSS"],
+        repo: "https://github.com/silverben10/wiki-card-viewer",
+        link: "https://bensilverman.co.uk/wiki-card-viewer/",
+    },
+];
+
+export { jobs, projects };

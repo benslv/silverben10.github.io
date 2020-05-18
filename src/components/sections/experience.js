@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import jobs from "./jobs";
+import { jobs } from "../../config";
 
 const StyledJobList = styled.div``;
 
