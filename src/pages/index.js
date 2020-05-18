@@ -8,6 +8,7 @@ import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
 import Skills from "../components/sections/skills";
 import Experience from "../components/sections/experience";
+import Projects from "../components/sections/projects";
 
 // Import styles
 import "../styles/index.scss";
@@ -18,6 +19,7 @@ const IndexPage = () => (
         <About />
         <Skills />
         <Experience />
+        <Projects />
     </Layout>
 );
 
