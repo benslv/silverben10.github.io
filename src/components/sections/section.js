@@ -1,7 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
-import "./section.scss";
+const StyledSection = styled.div`
+	margin: 2em 0;
+`;
 
-const Section = ({ children }) => <div>{children}</div>;
+const SectionHeader = styled.h2`
+	position: relative;
+`;
+
+const Section = ({ children, title }) => (
+	<StyledSection>
+		<SectionHeader>{title}</SectionHeader>
+		{children}
+	</StyledSection>
+);
 
 export default Section;

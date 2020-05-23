@@ -3,8 +3,7 @@ import React from "react";
 import Section from "./section";
 
 const About = () => (
-	<Section>
-		<h2>About</h2>
+	<Section title="About">
 		<p>
 			Hi! I'm Ben, a second year Computer Science student at the University of York. I built
 			this website to showcase the work I've been doing recently and demonstrate my skills in

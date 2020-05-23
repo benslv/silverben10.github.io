@@ -35,12 +35,10 @@ const StyledRespList = styled.ul`
 `;
 
 const Experience = () => (
-	<Section>
-		<h2>My Experience</h2>
+	<Section title="Experience">
 		<StyledJobList>
 			{jobs.map((job) => {
 				const { name, role, link, startDate, endDate, responsibilities } = job;
-
 				return (
 					<StyledJobEntry>
 						<StyledJobTitle>
