@@ -14,13 +14,13 @@ import Projects from "../components/sections/projects";
 import "../styles/index.scss";
 
 const IndexPage = () => (
-    <Layout title="Home">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-    </Layout>
+	<Layout title="Home">
+		<Hero />
+		<About />
+		<Skills />
+		<Experience />
+		{/* <Projects /> */}
+	</Layout>
 );
 
 export default IndexPage;
