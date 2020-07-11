@@ -15,7 +15,7 @@ const StyledSkillsLists = styled.div`
 
 const StyledUl = styled.ul`
 	list-style-type: none;
-	line-height: 150%;
+	line-height: 200%;
 	padding-left: 0;
 	margin-top: 0;
 	&:before {
