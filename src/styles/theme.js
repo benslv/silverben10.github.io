@@ -13,7 +13,7 @@ module.exports = {
 	},
 
 	fontSizes: {
-		base: "22px",
+		base: "20px",
 	},
 
 	easing: "ease 0.1s",

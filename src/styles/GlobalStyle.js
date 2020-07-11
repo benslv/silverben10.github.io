@@ -1,9 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 import theme from "./theme";
 
+import WebFont from "webfontloader";
+
 const { colors, fonts, fontSizes } = theme;
 
+WebFont.load({
+	google: {
+		families: ["Inter:400,700", "sans-serif"],
+	},
+});
+
 const GlobalStyle = createGlobalStyle`
+
     html {
         box-sizing: border-box;
         width: 100%;
@@ -22,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100%;
 
         color: ${colors.dark};
-        font-family: ${fonts.Inter};
+        font-family: "Inter", sans-serif;
         font-weight: 400;
 
     }
