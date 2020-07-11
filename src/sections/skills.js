@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Section from "../components/section";
 
-import { skills } from "../config";
+import { skills } from "../content";
 
 const StyledSkillsLists = styled.div`
 	display: grid;
