@@ -1,4 +1,4 @@
-const theme = {
+module.exports = {
 	colors: {
 		dark: "#0e1b2f",
 		light: "#ffffff",
@@ -15,6 +15,6 @@ const theme = {
 	fontSizes: {
 		base: "22px",
 	},
-};
 
-export default theme;
+	easing: "ease 0.1s",
+};
