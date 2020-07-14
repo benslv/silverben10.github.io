@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import Section from "../components/section";
@@ -15,7 +15,7 @@ const StyledTabs = styled.div`
 
 const StyledTabList = styled.ul`
 	width: max-content;
-	padding: 0;
+	padding: 0.5em 0 0 0;
 	margin: 0;
 	list-style: none;
 `;
@@ -23,14 +23,18 @@ const StyledTabList = styled.ul`
 const StyledTabButton = styled.button`
 	outline: none;
 	border: none;
-	background: none;
 	font-size: ${fontSizes.base};
 	padding: 0;
+	padding: 0.5em;
 	height: 50px;
+	border-left: 2px solid ${colors.accent_20};
 
-	color: ${colors.grey};
+	background: ${(props) => (props.isActive ? colors.accent_20 : "none")};
+	color: ${(props) => (props.isActive ? colors.darkGrey : colors.grey)};
 
 	display: flex;
+	align-items: center;
+	text-align: left;
 	width: 100%;
 
 	transition: ${easing};
@@ -40,18 +44,28 @@ const StyledTabButton = styled.button`
 	}
 `;
 
-const Experience = () => (
-	<Section emoji="👥" title="Experience">
-		<StyledTabs>
-			<StyledTabList>
-				{jobs.map(({ name }) => (
-					<StyledTabButton className="tab-links" onClick={`openContent(event, ${name}`}>
-						{name}
-					</StyledTabButton>
-				))}
-			</StyledTabList>
-		</StyledTabs>
-	</Section>
-);
+const Experience = () => {
+	const [activeTabId, setActiveTabId] = useState(0);
+
+	return (
+		<Section emoji="👥" title="Experience">
+			<StyledTabs>
+				<StyledTabList>
+					{jobs.map(({ name }, i) => (
+						<li key={i}>
+							<StyledTabButton
+								isActive={activeTabId === i}
+								id={`tab-${i}`}
+								className="tab-links"
+								onClick={() => setActiveTabId(i)}>
+								{name}
+							</StyledTabButton>
+						</li>
+					))}
+				</StyledTabList>
+			</StyledTabs>
+		</Section>
+	);
+};
 
 export default Experience;
