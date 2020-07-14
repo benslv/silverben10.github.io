@@ -5,6 +5,7 @@ import Section from "../components/section";
 
 import { jobs } from "../content";
 
+import mixins from "../styles/mixins";
 import { colors, fontSizes, easing } from "../styles/theme";
 
 const StyledTabs = styled.div`
@@ -25,7 +26,7 @@ const StyledTabButton = styled.button`
 	border: none;
 	font-size: ${fontSizes.base};
 	padding: 0;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	height: 50px;
 	border-left: 2px solid ${colors.accent_20};
 
@@ -37,11 +38,38 @@ const StyledTabButton = styled.button`
 	text-align: left;
 	width: 100%;
 
+	white-space: nowrap;
+
 	transition: ${easing};
 
 	:hover {
 		color: ${colors.darkGrey};
 	}
+`;
+
+const StyledTabContent = styled.div`
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	padding-top: 0.5em;
+	padding-left: 1em;
+
+	ul {
+		${mixins.niceList};
+	}
+`;
+
+const StyledJobTitle = styled.h3`
+	font-weight: bold;
+
+	a {
+		${mixins.link};
+	}
+`;
+
+const StyledJobRange = styled.p`
+	color: ${colors.grey};
 `;
 
 const Experience = () => {
@@ -63,6 +91,30 @@ const Experience = () => {
 						</li>
 					))}
 				</StyledTabList>
+
+				{jobs.map((job, i) => {
+					const { name, role, startDate, endDate, url, responsibilities } = job;
+					return (
+						<StyledTabContent
+							key={i}
+							isActive={activeTabId === i}
+							id={`content-${i}`}
+							hidden={activeTabId !== i}>
+							<StyledJobTitle>
+								<span>{role} </span>
+								<a href={url} target="_blank" rel="nofollow noopener noreferrer">
+									@ {name}
+								</a>
+							</StyledJobTitle>
+							<StyledJobRange>{`${startDate} - ${endDate}`}</StyledJobRange>
+							<ul>
+								{responsibilities.map((resp) => (
+									<li>{resp}</li>
+								))}
+							</ul>
+						</StyledTabContent>
+					);
+				})}
 			</StyledTabs>
 		</Section>
 	);
