@@ -8,7 +8,7 @@ const StyledHeading = styled.h2`
 `;
 
 const StyledSection = styled.section`
-	padding: 25px 0;
+	padding: 5em 0;
 `;
 
 const Section = (props) => (
