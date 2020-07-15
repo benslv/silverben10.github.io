@@ -10,6 +10,7 @@ module.exports = {
 
 	fonts: {
 		Inter: "Inter, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif",
+		Mono: "IBM Plex Mono, monospace",
 	},
 
 	fontSizes: {
@@ -17,4 +18,7 @@ module.exports = {
 	},
 
 	easing: "ease 0.1s",
+
+	borderRadius: "20px",
+	shadow: "0px 15px 35px 0px rgba(0,0,0,0.1)",
 };
