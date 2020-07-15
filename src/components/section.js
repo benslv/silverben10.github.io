@@ -2,13 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeading = styled.h2`
+	margin-bottom: 1em;
+
 	::before {
 		content: ${(props) => `"${props.emoji} "` || ""};
 	}
 `;
 
 const StyledSection = styled.section`
-	padding: 5em 0;
+	padding: 2em 0;
 `;
 
 const Section = (props) => (
