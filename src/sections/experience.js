@@ -53,7 +53,7 @@ const StyledTabContent = styled.div`
 	height: auto;
 
 	padding-top: 0.5em;
-	padding-left: 1em;
+	padding-left: 1.5em;
 
 	ul {
 		${mixins.niceList};
@@ -70,6 +70,7 @@ const StyledJobTitle = styled.h3`
 
 const StyledJobRange = styled.p`
 	color: ${colors.grey};
+	font-style: italic;
 `;
 
 const Experience = () => {
