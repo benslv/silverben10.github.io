@@ -72,16 +72,18 @@ module.exports = {
 			description:
 				"Website for CyberSoc, the University of York’s Cyber Security society. Designed and built from scratch, using GatsbyJS to leverage static site hosting with dynamic content.",
 			techs: ["React", "Express", "Gatsby", "HTML", "Sass"],
-			repo: "https://github.com/CyberSocYork/cybersocyork.github.io ",
+			repo: "https://github.com/CyberSocYork/cybersocyork.github.io",
 			url: "https://cybersoc.co.uk",
+			image: "img/cybersoc.png",
 		},
 		{
-			name: "WikiCard Viewer",
+			name: "jsfcyat",
 			description:
-				"A web app using ReactJS that allows users to search for a term on Wikipedia and have the results returned to them as a set of aesthetic cards.",
-			techs: ["React", "JavaScript", "HTML", "CSS"],
+				"A Node.js wrapper for the Gfycat API, using async/await functionality, allowing users to create and upload media to Gfycat via their command line.",
+			techs: ["Node", "Axios", "ES6"],
 			repo: "https://github.com/silverben10/wiki-card-viewer",
-			url: "https://bensilverman.co.uk/wiki-card-viewer/",
+			url: "https://www.npmjs.com/package/jsfycat",
+			image: "img/jsfycat.png",
 		},
 	],
 };
