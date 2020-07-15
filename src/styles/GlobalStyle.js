@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100%;
 
         color: ${colors.dark};
-        font-family: "Inter", sans-serif;
+        font-family: ${fonts.Inter};
         font-weight: 400;
 
     }
