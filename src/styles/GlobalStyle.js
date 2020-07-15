@@ -7,7 +7,7 @@ const { colors, fonts, fontSizes } = theme;
 
 WebFont.load({
 	google: {
-		families: ["Inter:400,700", "sans-serif"],
+		families: ["Inter:400,700", "IBM Plex Mono:500", "sans-serif"],
 	},
 });
 
