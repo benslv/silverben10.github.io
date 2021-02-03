@@ -1,3 +1,4 @@
+==================================================================
 https://keybase.io/bensilverman
 --------------------------------------------------------------------
 
@@ -5,49 +6,70 @@ I hereby claim:
 
   * I am an admin of https://bensilverman.co.uk
   * I am bensilverman (https://keybase.io/bensilverman) on keybase.
-  * I have a public key ASD6prf_pW8RxojsOkkUuGgc4WDHvlp5i0lquPDxpSyraQo
+  * I have a public key with fingerprint B4CF 4405 FFEA F8CB 8F24  598F F70D F5B0 D73F AA2B
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "010199f5eeb2530c93993210176ffac7d146c2c6bf6e990cbc1903fabf4d27b2714e0a",
+      "eldest_kid": "012000aa0474b944e0236e67adee5dc6de4b0f8838aeb1ded1563bc590ac0ac6e4660a",
+      "fingerprint": "b4cf4405ffeaf8cb8f24598ff70df5b0d73faa2b",
       "host": "keybase.io",
-      "kid": "0120faa6b7ffa56f11c688ec3a4914b8681ce160c7be5a798b496ab8f0f1a52cab690a",
+      "key_id": "f70df5b0d73faa2b",
+      "kid": "0101fc044ae5f21ade2357ebde2e46b5e91de11fea28e614a49a07b089fa8c7cbe500a",
       "uid": "cb06ce6184d0a0f1769cb56f950e6c19",
       "username": "bensilverman"
     },
-    "merkle_root": {
-      "ctime": 1581864057,
-      "hash": "3dd7d00987ee4c6681da9c2d113395ea7aef0f4a12e110e93a6b5ee3d37e7626bc3816c759405f5da92b6e97336417bbce8fb0d50e127b6db626483014c55440",
-      "hash_meta": "7dac85b0f0377f6ac55ae7c845a003754cd5e823ebef74cb865d4e3363dc9c75",
-      "seqno": 14619426
-    },
     "service": {
-      "entropy": "cX3UF9koc3cjwqEKTmIajrEU",
       "hostname": "bensilverman.co.uk",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 2
+    "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "5.2.0"
-  },
-  "ctime": 1581864093,
-  "expire_in": 504576000,
-  "prev": "5c83426e062325ce5634c0b9df3b5cb32c9f4b3083f53eaf4ca3119922fa9e75",
-  "seqno": 9,
+  "ctime": 1612384665,
+  "expire_in": 157680000,
+  "prev": "aca4dcff7522363b70369fb803eb7cb2f62c4b33375a8391a33c2632978a32f2",
+  "seqno": 32,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+qa3/6VvEcaI7DpJFLhoHOFgx75aeYtJarjw8aUsq2kKp3BheWxvYWTESpcCCcQgXINCbgYjJc5WNMC53ztcsyyfSzCD9T6vTKMRmSL6nnXEIF6GrfhZjeR8P7QGjIp6odYxDnitglUpXKGJHPDfE2A4AgHCo3NpZ8RA704DCXMTsZENp2GaSwUfZGfUERinAkUkd1JEI+icOxEQm2Pv+F5W3erU0xSJG3NpjbD7YrEEGBJS5f/25h1sAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMay3oGtX3v6Mi+3lpUniaHLhRb0SQ+R/kGTuGITsnOyo3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNzAnicbVJtTFNXGKZYzCBjgmOwoZN5cW58DM/97G23BUdCiWaI0R8kCtZz7z0X
+ri1taQsCHW6BbCGTMcLkywWYYrbIkJAtiEAE+ZzCRD7GmLLAD3DTwExHuxRmCDsl
+85/JSU7OeZ/nOc/7vGcoeJtfkMob/E/7bGJLnGqs/3Ke3+ldgfVOQrBIhYTOSRjR
+1oZMErI7DEZFInQEICkAAISA0TCClmEQoGgOcRooIcRKIichRgAyz9M8RAIpIYlk
+OVoQWS2AIl4cYjgOQCKekBVzFrJZbYrZgWUFRpQZBrCyjKDMiwIvUwyr5WVZAySZ
+FYCkoWUIKQETsy12HwObE6AdJSgWfIcPhi17z8E/8w1IWQQMAxErUyS2S9GsBgl4
+x5YEFmmxWZLEz1M84kgGMloINALgtTLkRY0oIBZs+c7bkhMFwIkYxzMSgEAmNZxW
+FFhO1rIAcSKp9QHtyGaGOcjXHTLbFVM+suVAM1EcT+BKviIiX7i+bp6DShAtCXlG
+rGK1WRwW0WLC9WyHw2rX+fiOQquPcBYJhv+lDIJilnCimIEF7IrFTOhIjBQdik+b
+5EiK5nH0bDyBCqyKDRkUH4LVcDweJ/C9g/KxJBQhI4k4dpbCc6UFDaA5rSzwgEYC
+DoGSOUpkBJqmNSzkaS0JaVqkOJrSanhIUzJF+JrLNVsIHU1hnzALa9qVLDN05NkQ
+UTzQn6H2UwX5bQ/w9301v6DAkGcf8JOwHZvpl7stO8P7e8bPjRXdSPu4eDKsqUj/
+11z+0SNLHtJzj1wNpgMbaj89M6a3V5Oekejfkm5NdVb09TW03Do4FeWXoi6YbKio
+25+fsC0itfd25JSiX0rLnFxy/uBKOeXurmlf7G55urqra8hUet+dF+p6pTwsIzZa
+Ffq3d6bii9e75o/XvA/vGRI8ve3zvWsvdrLTHV9l7c/KeRxXeLox/WnGzYCFhZjM
+73IXfoqoCy9oflKSuX7R33xBx2x+ORqyXX23cihq8J3lb35MToss+cxxfYMwwQd1
+67EzDyulvjLF9ZJ6rWbxa2PryWsDgztGEo/yZ/pbkysXN37ZHji7OXx1cM0/uXUi
+xXXp0L+Pskc2Rx+9PPbqQEdnYGLHzoZpdaa+9k76G40rbnWJ/Uhz0kRpT1DrsRdO
+ldZYvR/Vx/sf2Lv8IDY99crKtOC6uvvP8raYuuiyvQWVGeuR+ubXvj+3r3qmZLzz
+yrJKBv1UfdeqnVgxe3Mbb7f8POykygPGU5s+P3vHeuh8JV3ScNe9YTD+UTHuLc71
+xNXNzknzJ932amfrkyzXh28eWJg0hUwer00vizlRRHgutjnvK/K317y7VWpjW9Hm
+r+T89HsRE50He2j07lvn1z1NFXtUfW79jajDD0+8PZcU/sFM2e+h9MIF67FET1XL
+pZnD+0aH9+hdXVWh16tuPv4PXzrY7A==
+=uRQR
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
 View my publicly-auditable identity here: https://keybase.io/bensilverman
+
+==================================================================
